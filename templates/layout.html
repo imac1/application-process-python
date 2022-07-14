@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block page_title %}Main page{% endblock %} - Application process</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+<div class="content-wrapper">
+    <header>
+        <h1 id="header-title">Codecool Application Process system</h1>
+    </header>
+    <section>
+        <h2 class="title text-center">{{ self.page_title() }}</h2>
+
+        {% block content %}{% endblock %}
+    </section>
+</div>
+</body>
+</html>
+
+
+
